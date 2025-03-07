@@ -4,11 +4,8 @@ from configurations import Configuration
 from configurations.values import DatabaseURLValue
 from dotenv import load_dotenv
 
-from settings._auth import AuthSettings
-from settings._installed_apps import InstalledAppSettings
-from settings._middleware import MiddlewareSettings
-from settings._password_validators import PasswordValidatorSettings
-from settings._templates import TemplatesSettings
+from settings import AuthSettings, InstalledAppSettings, MiddlewareSettings, PasswordValidatorSettings, \
+    TemplatesSettings
 
 load_dotenv()
 

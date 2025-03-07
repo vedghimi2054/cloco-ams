@@ -1,5 +1,13 @@
-# settings/__init__.py
-import os
+from settings._templates import TemplatesSettings
+from settings._auth import AuthSettings
+from settings._middleware import MiddlewareSettings
+from settings._installed_apps import InstalledAppSettings
+from settings._password_validators import PasswordValidatorSettings
 
-# Default to dev settings for development
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings.dev")
+__all__ = [
+    "TemplatesSettings",
+    "AuthSettings",
+    "InstalledAppSettings",
+    "PasswordValidatorSettings",
+    "MiddlewareSettings",
+]
