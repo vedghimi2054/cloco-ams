@@ -1,6 +1,5 @@
 from django.urls import path
 
-from dashboard.music import MusicCountView
 from music.views import GetSongsForArtist, CreateSongForArtist, UpdateSongForArtist, DeleteSongForArtist
 
 urlpatterns = [
@@ -9,5 +8,4 @@ urlpatterns = [
     path("create", CreateSongForArtist.as_view(), name="add-music"),
     path("<int:pk>/update/artist", UpdateSongForArtist.as_view(), name="update-music"),
     path("<int:pk>/delete/artist", DeleteSongForArtist.as_view(), name="delete-music"),
-    path("count", MusicCountView.as_view(), name="count-music"),
 ]

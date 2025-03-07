@@ -22,5 +22,6 @@ urlpatterns = [
     path("api/v1/music/",include("urls.music.urls")),
     path("api/v1/user/",include("urls.user.urls")),
     path("api/v1/auth/",include("urls.authentication.urls")),
+    path("api/v1/dashboard/",include("urls.dashboard.urls")),
     path('admin/', admin.site.urls),
 ]

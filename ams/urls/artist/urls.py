@@ -3,7 +3,6 @@ from django.urls import path
 from artist.views import SaveArtistView, UpdateArtistView, DeleteArtistView, GetAllArtistsView
 from artist.views.csv_export import ExportArtistView
 from artist.views.csv_import import ImportArtistView
-from dashboard.artist import ArtistCountView
 
 urlpatterns = [
     # Artist end-point
@@ -13,6 +12,5 @@ urlpatterns = [
     path("delete/<int:pk>", DeleteArtistView.as_view(), name="delete-artist"),
     path("export", ExportArtistView.as_view(), name="export-artist"),
     path("import", ImportArtistView.as_view(), name="import-artist"),
-    path("count", ArtistCountView.as_view(), name="total-artist"),
 
 ]
