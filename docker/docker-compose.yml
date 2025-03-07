@@ -1,0 +1,20 @@
+services:
+  ams_db:
+    container_name: db.ams
+    image: postgres:16
+    platform: linux/amd64
+    restart: unless-stopped
+    volumes:
+      - ./../../tmp/tmp_db:/tmp_a
+      - ./../../tmp/ams-db_volume:/var/lib/postgresql/data/
+    ports:
+    - "5434:5432"
+    environment:
+      POSTGRES_DB: "ams_db"
+      POSTGRES_USER: "roots"
+      POSTGRES_PASSWORD: "passwords"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d $$POSTGRES_DB"]
+      interval: 3s
+      timeout: 5s
+      retries: 5

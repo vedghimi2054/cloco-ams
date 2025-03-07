@@ -1,0 +1,3 @@
+id,name,dob,gender,address,first_release_year,no_of_albums_released,created_at,updated_at
+3,sudan sharki,2025-05-04 00:00:00.000000 +00:00,1,"123 Music St, New York, NY",2010,5,2025-03-05 08:07:57.263967 +00:00,2025-03-05 08:07:57.263982 +00:00
+6,django hamal,2025-05-04 00:00:00.000000 +00:00,1,Kathmandu,2010,5,2025-03-06 08:06:12.972133 +00:00,2025-03-06 08:06:12.972145 +00:00
