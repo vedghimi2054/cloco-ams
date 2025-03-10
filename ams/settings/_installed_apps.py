@@ -12,4 +12,6 @@ class InstalledAppSettings:
         'debug_toolbar',
         'user',
         'rest_framework_simplejwt.token_blacklist',
+        'corsheaders',
+
     ]

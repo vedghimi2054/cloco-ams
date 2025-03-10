@@ -18,6 +18,7 @@ class BaseSettings(Configuration):
     INSTALLED_APPS = InstalledAppSettings.INSTALLED_APPS
 
     MIDDLEWARE = MiddlewareSettings.MIDDLEWARE
+    CORS_ALLOWED_ORIGINS = MiddlewareSettings.CORS_ALLOWED_ORIGINS
 
     REST_FRAMEWORK = AuthSettings.REST_FRAMEWORK
     AUTH_USER_MODEL = AuthSettings.AUTH_USER_MODEL
